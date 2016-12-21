@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14823341587780" configfile="/TestPuntoPunto/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="enviar" id="pf14823347249961" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14823347249962" path="/enviar.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="index" id="pf14823347249963" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf14823347249962 pf14823347249964" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="recibir" id="pf14823347249965" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14823347249964" path="/recibir.jsp"/>
+  <links id="pf14823347249962" target="pf14823347249963" source="pf14823347249961" outcome="index"/>
+  <links id="pf14823347249964" target="pf14823347249963" source="pf14823347249965" outcome="index"/>
+</pageflow:Pageflow>
